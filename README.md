@@ -6,7 +6,7 @@
 
 ## Objetivo
 >Diseñar un lenguaje de dominio específico para simplificar cualquier tarea en la que estés interesado:Para escribir exámenes,
-Para dibujar/(hablar sobre) árboles: poner información en un nodo, mostrar los ancestros de este, buscar el ancestro comun, dibujar subarbol, etc.
+Para dibujar/(hablar sobre) árboles: poner información en un nodo, mostrar los ancestros de este, buscar el ancestro común, dibujar subarbol, etc.
 Para calcular fechas,
 Para generar emails
 Para escribir música
@@ -18,9 +18,9 @@ Para programar un conjunto Restringido de Juegos
 Especificar tareas (tipo Make, Rake, etc.)
 etc.
 
-## Desarollo
+## Desarrollo
 
->En este caso hemos decidido desarollar un LDE que reconozca examenes de tipo test, dado que es algo que ya conocemos de asignaturas anteriores.
+>En este caso hemos decidido desarrollar un LDE que reconozca exámenes de tipo test, dado que es algo que ya conocemos de asignaturas anteriores.
 
 La estructura en un principio será del tipo: 
 
@@ -48,4 +48,5 @@ Se puede acceder desde el siguiente enlace:
 
 
 ## Travis
-[![Build Status](https://travis-ci.org/alu0100204148/ExamenLDE.svg)](https://travis-ci.org/alu0100204148/ExamenLDE/PL0)
+[![Build Status](https://travis-ci.org/alu0100204148/ExamenLDE.svg)](https://travis-ci.org/alu0100204148/ExamenLDE)
+
