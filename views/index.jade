@@ -1,18 +1,47 @@
 doctype html
 html
   head
-    meta(charset='utf-8')
     title Predictive Recursive Descent Parser
+    meta(charset='utf-8')
+    link(href='/stylesheets/style.css', media='screen, projection', rel='stylesheet')
     link(href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css', media='screen, projection', rel='stylesheet')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
-
+    // script(src='./js/pl0.js')
     script(src='./js/main.js')
-    
-    
-
   body
-
+    header
+      img(style='float: left', src='/images/logo.png', width='30', height='30')
+      h1
+        | Práctica: 
+        span(style='color: #2dc234') Analizador de PL0
+      h2 Analizador de PL0 Ampliado Usando PEG.js
+      nav
+        ul
+          li
+            a(href='/grammar', title='Grammar') Grammar
+          li
+            a.current(href='/', title='Home') Home
+          li
+            a(href='./test', title='Tests del analizador') Tests
+          li
+            a(href='https://github.com/alu0100204148/pl0', title='Repo') Repo
+          li
+            a(href='http://en.wikipedia.org/wiki/Recursive_descent_parser', title='Wikipedia') Wikipedia
+          li
+            a(href='http://jade-lang.com//', title='Slim') Jade
+          li
+            a(href='http://sass-lang.com/', title='Sass') Sass
+          li
+            a(href='http://coffeescript.org/', title='Coffeescript') CoffeeScript
+          li
+            a(href='http://crguezl.github.io/pl-html/', title='PLGH') PL-GH
+          li
+            a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax') MathJax
+          li
+            a(href='http://travis-ci.org/alu0100204148/PL0', title='Travis') Travis
+    section
+      #header.header
         p Cargar el ejemplo a parsear
         div
           textarea#original(autofocus='', cols='80', rows='5')
