@@ -63,8 +63,12 @@ app.get('/test', function (request, response) {
    response.render('test', { title: 'test' });
 });
 
-app.get('/grammar', function (request, response) {
-   response.render('grammar', { title: 'grammar' });
+app.get('/lenguaje', function (request, response) {
+   response.render('lenguaje', { title: 'lenguaje' });
+});
+
+app.get('/contributors', function (request, response) {
+   response.render('contributors', { title: 'contributors' });
 });
 
 
