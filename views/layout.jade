@@ -17,28 +17,38 @@ html
     nav
       block nav
         ul
-          li
+          li.s3
+            a.current(href='/', title='Home') Home
+          li.s3
+            a(href='./test', title='Tests del analizador') Tests
+          li.s3
             a(href='/grammar', title='Grammar') Grammar
           li
-            a.current(href='/', title='Home') Home
-          li
-            a(href='./test', title='Tests del analizador') Tests
-          li
-            a(href='https://github.com/alu0100204148/pl0', title='Repo') Repo
-          li
-            a(href='http://en.wikipedia.org/wiki/Recursive_descent_parser', title='Wikipedia') Wikipedia
-          li
-            a(href='http://jade-lang.com//', title='Slim') Jade
-          li
-            a(href='http://sass-lang.com/', title='Sass') Sass
-          li
-            a(href='http://coffeescript.org/', title='Coffeescript') CoffeeScript
-          li
-            a(href='http://crguezl.github.io/pl-html/', title='PLGH') PL-GH
-          li
-            a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax') MathJax
-          li
-            a(href='http://travis-ci.org/alu0100204148/PL0', title='Travis') Travis
+            a(href='/contributors', title='Colaboradores') Colaboradores
+          li.right
+            a(href='https://github.com/alu0100204148/ExamenLDE', title='Repositorio')
+             img(src='/images/github.png', width='20', height='20')
+          li.s1.right
+            a(href='https://travis-ci.org/alu0100204148/ExamenLDE', title='Travis')
+             img(src='/images/travis.png', width='20', height='20')
+          li.s7.right
+            a(href='http://crguezl.github.io/pl-html/', title='PL')
+             img(src='/images/moodle.png', width='20', height='20')
+          li.s1.right
+            a(href='http://coffeescript.org/', title='Coffeescript')
+             img(src='/images/coffescript.png', width='20', height='20')
+          li.s1.right
+            a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax')
+             img(src='/images/mathjax.png', width='20', height='20')
+          li.s1.right
+            a(href='http://sass-lang.com/', title='Sass')
+             img(src='/images/sass.png', width='20', height='20')
+          li.s1.right
+            a(href='http://jade-lang.com/', title='Jade')
+             img(src='/images/jade.png', width='20', height='20')
+          li.s1.right
+            a(href='http://es.wikipedia.org/wiki/Lenguaje_espec%C3%ADfico_del_dominio', title='Wikipedia')
+             img(src='/images/wikipedia.png', width='20', height='20')
     section
       block content
     footer

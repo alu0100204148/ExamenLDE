@@ -2,10 +2,8 @@
 extends ./layout.jade
 
 block header
-  img(style='float: left', src='/images/logo.png', width='30', height='30')
-  h1 LDE: 
-    span(style='color: #2dc234') Generador de Exámenes
-  h2 Lenguaje de dominio específico que genera exámenes tipo test
+  #logo
+    a(href='/', title='Home')
 
 block content
   #header.header
@@ -44,5 +42,3 @@ block content
   pre#OUTPUT.
 
 block footer
-  a href="/" back to main
-
