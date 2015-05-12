@@ -19,15 +19,6 @@ html
         a(href='/', title='Home')
     nav
       ul
-        block nav
-          li.s3
-            a.current(href='/', title='Home') Home
-          li.s3
-            a(href='./test', title='Tests del analizador') Tests
-          li.s3
-            a(href='/lenguaje', title='Lenguaje') Lenguaje
-          li
-            a(href='/contributors', title='Colaboradores') Colaboradores
         li.right
           a(href='https://github.com/alu0100204148/ExamenLDE', title='Repositorio')
            img(src='/images/github.png', width='20', height='20')
@@ -52,6 +43,15 @@ html
         li.s1.right
           a(href='http://es.wikipedia.org/wiki/Lenguaje_espec%C3%ADfico_del_dominio', title='Wikipedia')
            img(src='/images/wikipedia.png', width='20', height='20')
+        block nav
+          li.s3
+            a.current(href='/', title='Home') Home
+          li.s3
+            a(href='./test', title='Tests del analizador') Tests
+          li.s3
+            a(href='/lenguaje', title='Lenguaje') Lenguaje
+          li
+            a(href='/contributors', title='Colaboradores') Colaboradores
     section
       block content
     footer
