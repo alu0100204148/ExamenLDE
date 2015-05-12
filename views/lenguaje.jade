@@ -1,63 +1,39 @@
-doctype html
-head
-    meta(charset='utf-8')
-     
-    link(href='/stylesheets/style.css', media='screen, projection', rel='stylesheet')
-   
-    link(href='images/favicon.jpg', rel='icon', type='image/jpg')
-    
-    link(href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css', media='screen, projection', rel='stylesheet')
-    
-    title Predictive Recursive Descent Parser
-    
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script(type='text/x-mathjax-config').
-      MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        jax: ["input/TeX", "output/HTML-CSS"],
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: true
-        },
-        "HTML-CSS": { availableFonts: ["TeX"] }
-      });
-    script(type='text/javascript', src='http://cdn.mathjax.org/mathjax/latest/MathJax.js')
-    
-    
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
-    script(src='/javascripts/main.js')
-    
-  body
-    header
-      h1 Predictive Recursive Descent Parser
-      nav
-        ul
-          li
-            a.current(href='/grammar', title='Grammar') Grammar
-          li
-            a(href='/', title='Home') Home
-          li
-            a(href='./test', title='Tests del analizador') Tests
-          li
-            a(href='https://github.com/alu0100204148/pl0', title='Repo') Repo
-          li
-            a(href='http://en.wikipedia.org/wiki/Recursive_descent_parser', title='Wikipedia') Wikipedia
-          li
-            a(href='http://jade-lang.com//', title='Slim') Jade
-          li
-            a(href='http://sass-lang.com/', title='Sass') Sass
-          li
-            a(href='http://coffeescript.org/', title='Coffeescript') CoffeeScript
-          li
-            a(href='http://crguezl.github.io/pl-html/', title='PLGH') PL-GH
-          li
-            a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax') MathJax
-          li
-            a(href='https://plus.google.com/u/0/+CasianoRodriguezLeon/', title='crguezl') crguezl
-          li
-            a(href='http://travis-ci.org/alu0100204148/PL0', title='Travis') Travis
+//- test.jade
+extends ./layout.jade
+
+block meta
+  script(type='text/x-mathjax-config').
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  script(type='text/javascript', src='http://cdn.mathjax.org/mathjax/latest/MathJax.js')
+  script(src='/javascripts/main.js')
+
+block style
+  link(href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css', media='screen, projection', rel='stylesheet')
+
+block title
+  title Lenguaje - Generador de Exámenes
+
+block nav
+  li.s3
+    a(href='/', title='Home') Home
+  li.s3
+    a(href='./test', title='Tests del analizador') Tests
+  li.s3
+    a.current(href='/lenguaje', title='Lenguaje') Lenguaje
+  li
+    a(href='/contributors', title='Colaboradores') Colaboradores
+
+block content
+  #content
     section
       br
     | Recuerde que un PEG $G$ es una cuaterna $G =(\Sigma,V,P,S)$.
@@ -172,6 +148,3 @@ head
     br
     br
     br
-    //
-      footer
-        a href="/" back to main

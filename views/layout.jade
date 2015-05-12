@@ -2,53 +2,55 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
     block meta
-      meta(charset='utf-8')
-      link(href='/stylesheets/style.css', media='screen, projection', rel='stylesheet')
-      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
-      // script(src='./js/pl0.js')
-      script(src='./js/main.js')
+
+    block style
+    link(href='/stylesheets/style.css', media='screen, projection', rel='stylesheet')
+
     block title
       title Generador de Exámenes - Lenguaje de Dominio Específico
   body
     header
-      block header
+      #logo
+        a(href='/', title='Home')
     nav
-      block nav
-        ul
+      ul
+        block nav
           li.s3
             a.current(href='/', title='Home') Home
           li.s3
             a(href='./test', title='Tests del analizador') Tests
           li.s3
-            a(href='/grammar', title='Grammar') Grammar
+            a(href='/lenguaje', title='Lenguaje') Lenguaje
           li
             a(href='/contributors', title='Colaboradores') Colaboradores
-          li.right
-            a(href='https://github.com/alu0100204148/ExamenLDE', title='Repositorio')
-             img(src='/images/github.png', width='20', height='20')
-          li.s1.right
-            a(href='https://travis-ci.org/alu0100204148/ExamenLDE', title='Travis')
-             img(src='/images/travis.png', width='20', height='20')
-          li.s7.right
-            a(href='http://crguezl.github.io/pl-html/', title='PL')
-             img(src='/images/moodle.png', width='20', height='20')
-          li.s1.right
-            a(href='http://coffeescript.org/', title='Coffeescript')
-             img(src='/images/coffescript.png', width='20', height='20')
-          li.s1.right
-            a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax')
-             img(src='/images/mathjax.png', width='20', height='20')
-          li.s1.right
-            a(href='http://sass-lang.com/', title='Sass')
-             img(src='/images/sass.png', width='20', height='20')
-          li.s1.right
-            a(href='http://jade-lang.com/', title='Jade')
-             img(src='/images/jade.png', width='20', height='20')
-          li.s1.right
-            a(href='http://es.wikipedia.org/wiki/Lenguaje_espec%C3%ADfico_del_dominio', title='Wikipedia')
-             img(src='/images/wikipedia.png', width='20', height='20')
+        li.right
+          a(href='https://github.com/alu0100204148/ExamenLDE', title='Repositorio')
+           img(src='/images/github.png', width='20', height='20')
+        li.s1.right
+          a(href='https://travis-ci.org/alu0100204148/ExamenLDE', title='Travis')
+           img(src='/images/travis.png', width='20', height='20')
+        li.s7.right
+          a(href='http://crguezl.github.io/pl-html/', title='PL')
+           img(src='/images/moodle.png', width='20', height='20')
+        li.s1.right
+          a(href='http://coffeescript.org/', title='Coffeescript')
+           img(src='/images/coffescript.png', width='20', height='20')
+        li.s1.right
+          a(href='http://docs.mathjax.org/en/latest/start.html', title='MathJax')
+           img(src='/images/mathjax.png', width='20', height='20')
+        li.s1.right
+          a(href='http://sass-lang.com/', title='Sass')
+           img(src='/images/sass.png', width='20', height='20')
+        li.s1.right
+          a(href='http://jade-lang.com/', title='Jade')
+           img(src='/images/jade.png', width='20', height='20')
+        li.s1.right
+          a(href='http://es.wikipedia.org/wiki/Lenguaje_espec%C3%ADfico_del_dominio', title='Wikipedia')
+           img(src='/images/wikipedia.png', width='20', height='20')
     section
       block content
     footer

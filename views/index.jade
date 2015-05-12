@@ -1,12 +1,12 @@
 //- index.jade
 extends ./layout.jade
 
-block header
-  #logo
-    a(href='/', title='Home')
+block meta
+  // script(src='./js/pl0.js')
+  script(src='./js/main.js')
 
 block content
-  #header.header
+  #content
     p Cargar el ejemplo a parsear
     div
       textarea#original(autofocus='', cols='80', rows='5')
@@ -40,5 +40,3 @@ block content
       script(src='js/main.js')
   input#PARSE.mylink.Boton(type='button', value='parse')
   pre#OUTPUT.
-
-block footer

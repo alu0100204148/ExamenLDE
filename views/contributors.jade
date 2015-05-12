@@ -1,0 +1,15 @@
+//- index.jade
+extends ./layout.jade
+
+block nav
+  li.s3
+    a(href='/', title='Home') Home
+  li.s3
+    a(href='./test', title='Tests del analizador') Tests
+  li.s3
+    a(href='/lenguaje', title='Lenguaje') Lenguaje
+  li
+    a.current(href='/contributors', title='Colaboradores') Colaboradores
+
+block content
+  #content

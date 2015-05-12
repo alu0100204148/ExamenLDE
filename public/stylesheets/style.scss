@@ -1,10 +1,9 @@
 $lightgrey: #f2f2f2;
-$grey: #d1d1d1;
+$grey: #a1a1a1;
 $darkgrey: #666;
 $blue1: #4669ff;
 $blue2: #468cff;
 $main-font: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
-$font2: Tahoma, Geneva, sans-serif;
 
 * {text-indent: 0px; margin: 0px; padding: 0px; font-family: $main-font}
 p {color: $grey; text-align: left}
@@ -31,3 +30,6 @@ nav li a:hover { opacity: 1; filter:  alpha(opacity=100)}
 .s1 {margin-right: 10px}
 .s7 {margin-right: 75px}
 .current {color: $blue2}
+.hiddenTestElements {display: none}
+
+#content {}
