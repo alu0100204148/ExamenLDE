@@ -40,7 +40,9 @@ block content
         else { alert("Failed to load file"); }
         }
       script(src='js/DSLEx.js')
+      script(src='js/DSLExGenerator.js')
       script(src='js/main.js')
 
       input.btn#PARSE.mylink.Boton(type='button', value='Generar')
+      button.btn#PREVIEW(type='button') Preview
       pre#OUTPUT.
