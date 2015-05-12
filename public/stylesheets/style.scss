@@ -32,4 +32,9 @@ nav li a:hover { opacity: 1; filter:  alpha(opacity=100)}
 .current {color: $blue2}
 .hiddenTestElements {display: none}
 
-#content {}
+#content {padding: 0 50px; width: 900px; margin-bottom: 70px}
+
+#foot {padding-top: 10px; position:fixed; display: block; left:0; bottom:0; background-color: $lightgrey; height: 19px; border-top: #e0e0e0 1px solid; width: 100%}
+#foot p {text-align: center; font-size: 10px}
+
+#blanket-main {padding-bottom: 30px}
