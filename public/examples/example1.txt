@@ -1,1 +1,11 @@
-if a == 1 then b = 4.
+"JavaScript Quiz",21-02-1995,"Casiano","PL"{
+                     "Where is the correct place to insert a JavaScript" [
+                                                          "The head section", F;
+                                                          "Both the head section and the body section are correct", V;
+                                                          "The body section", V;
+                                               ]
+                        "The external JavaScript file must contain the script tag" [
+                                                           "True", F;
+                                                          "False", V;
+                                               ]
+};
