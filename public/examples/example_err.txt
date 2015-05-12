@@ -1,2 +1,6 @@
-a = 3 + (4;
-b = 5.
+"Titulo",01-01-2015,"Profesor","Asignatura"{
+  "Pregunta 1" ["Respuesta 1 1", F; "Respuesta 1 2", V;]
+  "Pregunta 2" ["Respuesta 1 2", V;"Respuesta 2 2", V;]
+  "Pregunta 3" ["Respuesta 1 3", V;"Respuesta 3 2", V;"Respuesta 3 3", F;]
+  "Pregunta 4" ["Respuesta 1 4", V;"Respuesta 4 2", V;]
+};
