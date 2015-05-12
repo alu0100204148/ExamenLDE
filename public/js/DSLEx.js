@@ -40,10 +40,10 @@ DSLEx = (function() {
         peg$c5 = function(l, r) { return {EnunciadoResp:l, Veracidad:r }; },
         peg$c6 = /^[ \t\n\r]/,
         peg$c7 = { type: "class", value: "[ \\t\\n\\r]", description: "[ \\t\\n\\r]" },
-        peg$c8 = "\"",
-        peg$c9 = { type: "literal", value: "\"", description: "\"\\\"\"" },
-        peg$c10 = /^[a-zA-Z0-9 ?\xBF<>]/,
-        peg$c11 = { type: "class", value: "[a-zA-Z0-9 ?\\xBF<>]", description: "[a-zA-Z0-9 ?\\xBF<>]" },
+        peg$c8 = "'",
+        peg$c9 = { type: "literal", value: "'", description: "\"'\"" },
+        peg$c10 = /^[a-zA-Z0-9 ?\xBF<>"]/,
+        peg$c11 = { type: "class", value: "[a-zA-Z0-9 ?\\xBF<>\"]", description: "[a-zA-Z0-9 ?\\xBF<>\"]" },
         peg$c12 = function(literal) { return literal; },
         peg$c13 = /^[0-9]/,
         peg$c14 = { type: "class", value: "[0-9]", description: "[0-9]" },
@@ -453,7 +453,7 @@ DSLEx = (function() {
       s0 = peg$currPos;
       s1 = peg$parse_();
       if (s1 !== peg$FAILED) {
-        if (input.charCodeAt(peg$currPos) === 34) {
+        if (input.charCodeAt(peg$currPos) === 39) {
           s2 = peg$c8;
           peg$currPos++;
         } else {
@@ -485,7 +485,7 @@ DSLEx = (function() {
           }
           s3 = s4;
           if (s3 !== peg$FAILED) {
-            if (input.charCodeAt(peg$currPos) === 34) {
+            if (input.charCodeAt(peg$currPos) === 39) {
               s4 = peg$c8;
               peg$currPos++;
             } else {
