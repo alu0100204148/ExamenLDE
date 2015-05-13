@@ -12,7 +12,7 @@ answer
 
 _ = $[ \t\n\r]*
 
-LITERAL = _ "\'" literal:$([a-zA-Z0-9 ?¿<>"]*) "\'" _ { return literal; }
+LITERAL = _ "\'" literal:$([^']*) "\'" _ { return literal; }
 DATE = _ date:$([0-9][0-9]?_[-/]_[0-9][0-9]?_[-/]_[1-2][0-9][0-9][0-9]) _ { return date.split(/[ ]*[-/][ ]*/); }
 VF = _ vf:$([VF]) _ { return vf; }
 
