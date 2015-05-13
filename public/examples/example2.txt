@@ -1,2 +1,101 @@
-a = 4*2;
-if a > 6 then p a.
+'JavaScript Quiz',21-02-1995,'Casiano','PL'{
+                     'Which of the following is correct?' [
+                                                          'jQuery is a JavaScript Library', V;
+                                                          'jQuery is a JSON Library', F;
+                                               ]
+                     'jQuery uses CSS selectors to select elements?' [
+                                                          'True', V;
+                                                          'False', F;
+                                               ]
+                     'Which sign does jQuery use as a shortcut for jQuery?' [
+                                                          'the ? Sign', F;
+                                                          'the % Sign', F;
+                                                          'the $ Sign', V;
+                                               ]
+                     'With jQuery, look at the following selector: $("div"). What does it select?' [
+                                                          'The first div element', F;
+                                                          'All div elements', V;
+                                               ]
+                     'Is jQuery a library for client scripting or server scripting?' [
+                                                          'Server scripting', F;
+                                                          'Client scripting', V;
+                                               ]
+                     'Is it possible to use jQuery together with AJAX?' [
+                                                          'Yes', V;
+                                                          'No', F;
+                                               ]
+                     'The jQuery html() method works for both HTML and XML documents' [
+                                                          'True', F;
+                                                          'False', V;
+                                               ]
+                     'What is the correct jQuery code to set the background color of all p elements to red?' [
+                                                          '$("p").layout("background-color","red");', F;
+                                                          '$("p").css("background-color","red");', V;
+                                                          '$("p").style("background-color","red");', F;
+                                                          '$("p").manipulate("background-color","red");', F;
+                                               ]
+                     'With jQuery, look at the following selector: $("div.intro"). What does it select?' [
+                                                          'All div elements with id="intro"', F;
+                                                          'The first div element with id="intro"', F;
+                                                          'The first div element with class="intro"', F;
+                                                          'All div elements with class="intro"', V;
+                                               ]
+                     'Which jQuery method is used to hide selected elements?' [
+                                                          'display(none)', F;
+                                                          'visible(false)', F;
+                                                          'hidden()', F;
+                                                          'hide()', V;
+                                               ]
+                     'Which jQuery method is used to set one or more style properties for selected elements?' [
+                                                          'html()', F;
+                                                          'css()', V;
+                                                          'style()', F;
+                                               ]
+                     'Which jQuery method is used to perform an asynchronous HTTP request?' [
+                                                          'jQuery.ajaxSetup()', F;
+                                                          'jQuery.ajax()', V;
+                                                          'jQuery.ajaxAsync()', F;
+                                               ]
+                     'What is the correct jQuery code for making all div elements 100 pixels high?' [
+                                                          '$("div").height="100"', F;
+                                                          '$("div").height(100)', V;
+                                                          '$("div").yPos(100)', F;
+                                               ]
+                     'Which statement is true?' [
+                                                          'To use jQuery, you can refer to a hosted jQuery library at Google', V;
+                                                          'To use jQuery, you do not have to do anything. Most browsers (Internet Explorer, Chrome, Firefox and Opera) have the jQuery library built in the browser', F;
+                                                          'To use jQuery, you must buy the jQuery library at www.jquery.com', F;
+                                               ]
+                     'What scripting language is jQuery written in?' [
+                                                          'C#', F;
+                                                          'VBScript', F;
+                                                          'JavaScript', V;
+                                                          'C++',F;
+                                               ]
+                     'Which jQuery function is used to prevent code from running, before the document is finished loading?' [
+                                                          '$(body).onload()', F;
+                                                          '$(document).load()', F;
+                                                          '$(document).ready()', V;
+                                               ]
+                     'Which jQuery method should be used to deal with name conflicts?' [
+                                                          'nameConflict()', F;
+                                                          'conflict()', F;
+                                                          'noNameConflict()', F;
+                                                          'noConflict()', V;
+                                               ]
+                     'Which jQuery method is used to switch between adding/removing one or more classes (for CSS) from selected elements?' [
+                                                          'switch()', F;
+                                                          'toggleClass()', V;
+                                                          'altClass()', F;
+                                                          'switchClass()', F;
+                                               ]
+                     'Look at the following jQuery selector: $("div#intro .head"). What does it select?' [
+                                                          'All div elements with id="intro" or class="head"', F;
+                                                          'All elements with class="head" inside the first div element with id="intro"', V;
+                                                          'The first element with id="head" inside any div element with class="intro"', F;
+                                               ]
+                     'Is jQuery a W3C standard?' [
+                                                          'No', V;
+                                                          'Yes', F;
+                                               ]
+};
