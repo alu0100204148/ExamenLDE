@@ -1,6 +1,3 @@
-require '../public/js/DSLEx.js'
-chai = require 'chai'
-
 assert = chai.assert
 
 describe 'PEGJS ADPR', ->
